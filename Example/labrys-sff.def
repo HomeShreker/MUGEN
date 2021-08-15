@@ -1,0 +1,63 @@
+[Output]
+;Filename of the SFF File to Create(Required)
+	filename = chars/labrys/labrys.sff
+
+[Option]
+;Leave all these options as default - 
+	sprite.compress.5 = lz5
+	sprite.compress.8 = rle8
+	sprite.compress.24 = none
+	sprite.decompressonload = 0
+	sprite.detectduplicates = 0
+	sprite.autocrop = 1
+	pal.detectduplicates = 1
+	pal.discardduplicates = 1
+	pal.reverseact = 0
+	pal.reversepng = 0
+
+[Pal]
+;Specify Color Palettes to use here
+;1,1 maps to color scheme 1; 1,2 to color scheme 2 and so on
+;Can have up to 6
+	1,1, la000_00.png
+
+[Option]
+;option forces all sprites to use palette 1,1
+;It helps ensure your SFF file is built correctly
+	sprite.usepal = 1,1
+
+[Sprite]
+;This specifies all sprites
+;First two numbers is the group and image numbers
+;That is a pair of numbers you use to uniquely identify each sprite
+;The Filename is next
+;Following that, the last two numbers are the x and y axis
+;EX: 0,0, la000_00.png, 18,105
+
+;{=====Standing 0
+	0 , 0 , la000_00.png, 209 , 483 ;483
+	0 , 1 , la000_01.png, 209 , 488 ;488
+	0 , 2 , la000_02.png, 209 , 488 ;490
+	0 , 3 , la000_03.png, 209 , 488 ;488
+	0 , 4 , la000_04.png, 209 , 473;473
+	0 , 5 , la000_05.png, 209 , 478 ;478
+	0 , 6 , la000_06.png, 209 , 472 ;472
+	0 , 7 , la000_07.png, 209 , 469 ;469
+	0 , 8 , la000_08.png, 209 , 466 ;466
+	0 , 9 , la000_09.png, 209 , 467 ;467
+	0 , 10 , la000_10.png, 209 , 471 ;471
+	0 , 11 , la000_11.png, 209 , 477 ;477
+	0 , 12 , la000_10.png, 209 , 471 ;471
+	0 , 13 , la000_09.png, 209 , 467 ;467
+	0 , 14 , la000_08.png, 209 , 466 ;466
+	0 , 15 , la000_07.png, 209 , 469 ;469
+	0 , 16 , la000_06.png, 209 , 472 ;472
+	0 , 17 , la000_05.png, 209 , 478 ;478
+	0 , 18 , la000_04.png, 209 , 473 ;473
+	0 , 19 , la000_03.png, 209 , 488 ;488
+	0 , 20 , la000_02.png, 209 , 488 ;490
+	0 , 21 , la000_01.png, 209 , 488 ;488
+
+
+
+;End of File
